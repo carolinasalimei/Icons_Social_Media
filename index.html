@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
    <head>
-      <meta charset="utf-8">
-      <title>CSS3 - Neumorphic Social Icons</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
       <link rel="stylesheet" href="style.css">
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
    </head>
    <body>
-      <div class="center">
-         <div class="icons first">
-            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-            <li><a href="#"><span class="fab fa-github"></span></a></li>
-         </div>
-         <div class="icons second">
-            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-            <li><a href="#"><span class="fab fa-github"></span></a></li>
-         </div>
-      </div>
-      <script>
-         $('.first li').click(function(){
-           $(this).toggleClass("shadow-1").siblings();
-           $(this).toggleClass("fill-color").siblings();
-         });
-         $('.second li').click(function(){
-           $(this).toggleClass("shadow-2").siblings();
-           $(this).toggleClass("fill-color").siblings();
-         });
-      </script>
+      
+            
+        </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#services" class="menu-btn">Services</a></li>
+                    <li><a href="#skills" class="menu-btn">skills</a></li>
+                    <li><a href="#teams" class="menu-btn">Teams</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+
+                    <a class="btnCv"
+                        href="https://drive.google.com/file/d/1WfvKkO-GehNjAZCakmX9jIMfd54uOwVw/view?usp=share_link">Download
+                        CV</a>
+                </ul>
+
+
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- seccion home------------------------------------------------------>
+        <section class="home" id="home">
+            <div class="max-width">
+
+                <div class="home-content">
+
+                    <div class="text-1">Mi nombre es,</div>
+                    <div class="text-2">Carolina Salimei</div>
+                    <div class="text-3">Soy <span class="typing"></span></div>
+                    <a href="#">Hire Me</a>
+                    <a class="btnMore" href="#">Learn more</a>
+
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </section>
+
+    
+        <script src="app.js"></script>
    </body>
 </html>
