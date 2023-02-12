@@ -11,7 +11,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -70,28 +69,15 @@ section .title {
     font-family: 'Ubuntu', sans-serif;
 }
 
-section .title::before {
 
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
 
-section .title::after {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 2rem;
-    color: #327AEB;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
+
+
+
+
+
+
+
 
 /* navbar styling */
 .navbar {
@@ -283,5 +269,76 @@ section .title::after {
     color: #327AEB;
     background: none;
 }
+/* teams section styling */
+
+
+.teams .max-width {
+
+
+    top: 1px;
+    width: 100%;
+    background-color: #0E2A50;
+    height: 50vh;
+
+}
+
+
+.teams .carousel .card:hover {
+    background: #00DFA5;
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+
+.teams .carousel .card img {
+    height: 80px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: end;
+    margin-bottom: 20 px;
+}
+
+.owl-dot {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #00DFA5 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #00DFA5 !important;
+}
+
+
 
 
